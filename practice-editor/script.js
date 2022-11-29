@@ -1,31 +1,41 @@
 "use strict";
+
+/////////////////////////SECTION/////////////////////////
+//DOM MANIPULATION METHODS
+
+//STUDY ADDING ELEMENTS TO THE PAGE..
+//const body = document.body;
+//body.append("Hello World", " bye"); //adds text hello world to body
+
+//STUDY CREATE AN ELEMENT
+//const div = document.createElement("div");
+//ADD ELEMENT TO THE PAGE..
+//body.append(div);
+//STUDY ADD TEXT TO ELEMENT
+//div.innerText = "Hello world"; //or
+//div.textContent = "hello world 2";
+
+//STUDY RENDER HTML INSIDE OF A DOCUMENT
 /*
-You are given an array (which will have a length of at 
-  least 3, but could be very large) containing integers. 
-  The array is either entirely comprised of odd integers 
-  or entirely comprised of even integers except for a 
-  single integer N. 
-  Write a method that takes the array as an argument and 
-  returns this "outlier" N.
-
-  Examples
-
-[2, 4, 0, 100, 4, 11, 2602, 36]
-Should return: 11 (the only odd number)
-
-[160, 3, 1719, 19, 11, 13, -21]
-Should return: 160 (the only even number)
+body.append(div);
+div.innerHTML = "<h1>hello world</h1><p>goodbye</p>;
+*/
+//another way to accomplish this would be..
+/*
+const strong = document.createElement("strong");
+strong.innerText = "Hello world 2";
+div.append(strong);
+body.append(div);
 */
 
-const findOutlier = function (integers) {
-  const even = integers.slice(0, 3).filter((e, i, arr) => arr[i] % 2 === 0);
-  if (even.length >= 2) {
-    return integers.find((e) => e % 2 !== 0);
-  } else {
-    return integers.find((e) => e % 2 === 0);
-  }
-};
-findOutlier([2, 4, 6, 51]);
-findOutlier([1, 3, 2]);
-findOutlier([28, 492, 888, 47]);
-//const found = array1.find(element => element > 10);
+//STUDY
+const body = document.body;
+const div = document.querySelector("div");
+const spanHi = document.querySelector("#hi");
+const spanBye = document.querySelector("#bye");
+spanBye.remove(); //completely removes the element from html
+
+//modify attributes of an element..
+console.log(spanHi.getAttribute("id")); //hi
+console.log(spanHi.id); //same as above
+spanHi.setAttribute("class", "red"); //added a class of .red as the only class on element..
