@@ -1,0 +1,12 @@
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+}
+h1 {
+  color: darkblue;
+  font-size: 6rem;
+  text-transform: uppercase;
+}
