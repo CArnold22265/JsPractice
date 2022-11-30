@@ -39,3 +39,12 @@ spanBye.remove(); //completely removes the element from html
 console.log(spanHi.getAttribute("id")); //hi
 console.log(spanHi.id); //same as above
 spanHi.setAttribute("class", "red"); //added a class of .red as the only class on element..
+//remove attribute
+spanHi.removeAttribute("title"); //removed title
+
+//STUDY add, or remove class from an element
+spanHi.classList.add("red"); //added class of red
+spanHi.classList.remove("red"); //added class of red
+
+//STUDY STUDY CHANGE STYLE PROPERTIES OF AN ELEMENT
+spanHi.style.color = "green"; //changed element from red to green...
