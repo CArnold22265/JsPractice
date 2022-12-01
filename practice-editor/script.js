@@ -47,4 +47,4 @@ spanHi.classList.add("red"); //added class of red
 spanHi.classList.remove("red"); //added class of red
 
 //STUDY STUDY CHANGE STYLE PROPERTIES OF AN ELEMENT
-spanHi.style.color = "green"; //changed element from red to green...
+spanHi.style.color = "green"; //changed element from red to
