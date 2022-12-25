@@ -1,15 +1,12 @@
 body {
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  background-color: grey;
+  background-color: #f3f3f3;
 }
 h1 {
   color: darkblue;
-  font-size: 6rem;
+  font-size: 2rem;
   text-transform: uppercase;
 }
-.red {
-  color: red;
+.orange-red {
+  color: orangered;
+  background-color: black;
 }
